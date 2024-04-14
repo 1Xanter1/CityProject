@@ -8,7 +8,7 @@ create table cities(
   primary key(city_id)
 );
 
-create table user(
+create table users(
   user_id serial8 not null,
   login varchar unique not null,
   name varchar not null,
@@ -20,6 +20,6 @@ insert into cities(city_name, index)
 values ('Astana', 010000),
        ('Almaty', 050000);
 
-insert into user(login, city, name)
+insert into users(login, city, name)
 values ('riotname232', 1, 'Mark'),
        ('devmagican', 2, 'Talgat');
