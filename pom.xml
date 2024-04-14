@@ -8,11 +8,7 @@
     <artifactId>CItyProject</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-<!--    <properties>-->
-<!--        <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/store_db"/>-->
-<!--        <property name="jakarta.persistence.jdbc.user" value="postgres"/>-->
-<!--        <property name="jakarta.persistence.jdbc.password" value="postgres"/>-->
-<!--    </properties>-->
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
