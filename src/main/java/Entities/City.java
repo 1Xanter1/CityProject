@@ -19,9 +19,6 @@ public class City {
     @Column(name = "index")
     private int index;
 
-    @OneToMany(mappedBy = "cities")
-    List<User> users;
-
     public String getName() {
         return name;
     }
@@ -33,4 +30,17 @@ public class City {
     public int getIndex() {
         return index;
     }
+
+    public void setCityId(long cityId) {
+        this.cityId = cityId;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
 }

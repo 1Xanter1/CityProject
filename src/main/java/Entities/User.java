@@ -2,6 +2,7 @@ package Entities;
 
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.Comment;
 
 @Entity
 @Table(name = "users")
@@ -14,6 +15,9 @@ public class User {
 
     @Column(name = "login")
     private String login;
+
+    @Column(name = "name")
+    private String name;
 
     @ManyToOne
     @JoinColumn(name = "city")
@@ -29,6 +33,22 @@ public class User {
 
     public City getCity() {
         return city;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
     }
 }
 

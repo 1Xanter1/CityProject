@@ -1,5 +1,5 @@
+drop table users;
 drop table cities;
-drop table user;
 
 create table cities(
   city_id serial8 not null,
